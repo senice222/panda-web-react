@@ -1,0 +1,17 @@
+.headerContainer {
+  display: flex;
+  padding-left: 28px;
+  padding-right: 28px;
+  justify-content: space-between;
+  align-items: center;
+  .leftBlock {
+    img {
+      cursor: pointer;
+    }
+  }
+  .rightBlock {
+    img {
+      cursor: pointer ;
+    }
+  }
+}

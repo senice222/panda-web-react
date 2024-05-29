@@ -1,0 +1,63 @@
+@import "../../theme";
+
+.secondBlock {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 870px;
+  .textDiv {
+    position: relative;
+    z-index: 10;
+    margin-left: 250px;
+    width: 535px;
+    h2 {
+      color: $title-color;
+      font-size: 40px;
+      font-weight: bold;
+    }
+    h3 {
+      margin-top: 20px;
+      color: $title-color;
+      font-size: 24px;
+      font-weight: 600;
+      margin-bottom: 0;
+    }
+    p {
+      font-weight: 400;
+      margin-top: 25px;
+      color: $p-color;
+      font-size: 18px;
+    }
+    button {
+      background-color: $button;
+      width: 275px;
+      height: 50px;
+      border-radius: 45px;
+      border: 0;
+      color: white;
+      font-size: 20px;
+      cursor: pointer;
+      margin-top: 33px;
+      font-weight: bold;
+      transition: .3s;
+      &:hover {
+        background-color: $button-hover;
+      }
+      &:active {
+        background-color: $button-click;
+      }
+    }
+  }
+}
+@media (max-width: 1570px) {
+  .imgDiv {
+    //img {
+    //  width: 400px;
+    //  height: auto;
+    //}
+    //background-color: rgba(0, 0, 0, 0.5 );
+    position: absolute;
+    right: 0;
+  }
+}
