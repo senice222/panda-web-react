@@ -1,0 +1,20 @@
+@import "../theme.scss";
+
+header {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-inline: 33px;
+    margin-top: 46px;
+
+    .burger {
+        width: 23px;
+        height: 15px;
+        cursor: pointer;
+
+        path {
+            fill: red;
+        }
+    }
+
+}
