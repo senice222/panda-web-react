@@ -9,7 +9,7 @@ const Header = () => {
     const [switchMenu, setSwitchMenu] = useState(false)
 
     return (
-        <div className={`${style.headerContainer} ${switchMenu ? style.active_header : ''}`}>
+        <header className={`${style.headerContainer} ${switchMenu ? style.active_header : ''}`}>
             <div className={style.leftBlock}>
                 <img src={burger} alt="/" onClick={() => setSwitchMenu((prev) => !prev)}/>
             </div>
@@ -20,7 +20,7 @@ const Header = () => {
                 <img src={tg} style={{marginRight: "20px"}} alt="/"/>
                 <img src={inst} alt="/"/>
             </div>
-        </div>
+        </header>
     );
 };
 

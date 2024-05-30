@@ -1,0 +1,28 @@
+
+.swiper {
+  width: 100vw;
+  height: 100%;
+  //overflow-x: visible;
+
+}
+.mySwiper {
+  height: 500px;
+  //overflow-x: visible;
+
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: red;
+  filter: blur(60.55px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
