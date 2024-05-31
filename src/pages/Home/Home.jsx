@@ -6,19 +6,23 @@ import HighPerfomanceSite from "../../components/HighPerfomanceSite/HighPerfoman
 import TechSupport from "../../components/TechSupport/TechSupport";
 import {Results} from "../../components/Results/Results";
 import {Slider} from "../../components/Slider/Slider";
-
-
+import WelcomeBlock from '../../components/WelcomeBlock/Welcome'
+import Leads from '../../components/LeadGeneration/LeadGeneration'
+import Footer from '../../components/footer/footer'
 
 const Home = () => {
     return (
         <div>
             <Header />
+            <WelcomeBlock />
             <CorporateSite/>
             <ExclusiveSites />
             <HighPerfomanceSite />
             <TechSupport />
             <Results />
             <Slider />
+            <Leads />
+            <Footer />
         </div>
     );
 };
