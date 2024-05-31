@@ -1,0 +1,35 @@
+@import "../../theme";
+
+.sliderHeader {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 35px;
+  .headerContent {
+    width: 810px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    svg {
+      cursor: pointer;
+      user-select: none;
+    }
+  }
+  h1 {
+    font-size: 36px;
+    color: $title-color;
+  }
+  .right {
+    transform: rotateZ(180deg);
+  }
+}
+.sliderwrapper {
+  width: 100vw;
+  height: 815px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../../assets/tuchka_slider.png");
+}
