@@ -18,7 +18,7 @@ const Header = () => {
             <motion.div 
                 className={style.centerBlock}
                 onHoverStart={() => setLogoHover(true)}
-                onHoverEnd={() => setTimeout(() => setLogoHover(false), 500)}
+                onHoverEnd={() => setLogoHover(false)}
             >
                 <img 
                     src={logo} 
