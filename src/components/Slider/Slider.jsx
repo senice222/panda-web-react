@@ -11,14 +11,20 @@ import person3 from '../../assets/person_3.png'
 import person4 from '../../assets/person_4.png'
 import './Slider.scss';
 import s from './Slider.module.scss'
-
+import { motion } from 'framer-motion'
 
 export const Slider = () => {
     const prevRef = useRef(null);
     const nextRef = useRef(null);
     const swiper = useSwiper()
     return (
-        <div className={s.sliderwrapper}>
+        <motion.div 
+            className={s.sliderwrapper}
+            viewport={{ once: true }}
+            whileInView={{ y: 0, opacity: 1 }}
+            initial={{ y: 10, opacity: 0 }}
+            transition={{ delay: 0.1 }}
+        >
 
             <div className={s.sliderHeader}>
                 <div className={s.headerContent}>
@@ -184,6 +190,6 @@ export const Slider = () => {
                 </SwiperSlide>
             </Swiper>
 
-        </div>
+        </motion.div>
     )
 }
