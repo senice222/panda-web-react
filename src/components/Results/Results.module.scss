@@ -11,6 +11,7 @@
     margin-top: 10px;
     color: $title-color;
     font-size: 48px;
+    text-align: center;
     font-weight: bold;
   }
 
@@ -20,7 +21,7 @@
   p {
     margin-top: 35px;
     color: $title-color;
-    width: 90%;
+    width: 70vw;
     text-align: center;
     font-size: 26px;
     span {
@@ -62,6 +63,65 @@
         border-radius: 50%;
         border: 2px solid $border-color;
       }
+    }
+  }
+}
+
+@media (max-width: 1240px) {
+  header {
+    h1 {
+      font-size: 30px !important;
+    }
+    p {
+      font-size: 20px !important;
+      width: 95vw !important;
+    }
+  }
+  .items {
+    width: 90vw !important;
+  }
+  .item {
+    width: 47% !important;
+    h2 {
+      
+      font-size: 18px !important;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+
+  .icon {
+    margin-left: 5px !important;
+    width: 36px !important;
+    height: 36px !important;
+    svg {
+      height: 18px;
+    }
+  }
+  .item {
+    width: 100% !important;
+  }
+  .items {
+    width: 100% !important;
+    flex-direction: column;
+    justify-content: center !important;
+  }
+  .content {
+    width: 80vw !important;
+  }
+  header {
+    h1 {
+      font-size: 25px !important;
+    }
+    p {
+      font-size: 16px !important;
+      width: 90vw !important;
+    }
+  }
+  .item {
+    h2 {
+      font-size: 14px !important;
     }
   }
 }

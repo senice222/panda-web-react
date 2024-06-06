@@ -18,7 +18,7 @@ export const Slider = () => {
     const nextRef = useRef(null);
     const swiper = useSwiper()
     return (
-        <motion.div 
+        <motion.div
             className={s.sliderwrapper}
             viewport={{ once: true }}
             whileInView={{ y: 0, opacity: 1 }}
@@ -46,9 +46,7 @@ export const Slider = () => {
                     />
 
                 </svg>
-
                     <h1>Отзывы наших клиентов</h1>
-
                     <svg
                         ref={nextRef}
                         className={`swiper-button-next1 ${s.right}`}
@@ -65,7 +63,8 @@ export const Slider = () => {
                             strokeLinecap="round"
                             strokeLinejoin="round"
                         />
-                    </svg></div>
+                    </svg>
+                </div>
             </div>
             <Swiper
                 navigation={{
@@ -73,7 +72,7 @@ export const Slider = () => {
                     nextEl: '.swiper-button-next1'
                 }}
                 slidesPerView={'auto'}
-                spaceBetween={40}
+                spaceBetween={0}
                 pagination={{
                     clickable: true,
                 }}
@@ -92,7 +91,9 @@ export const Slider = () => {
                                 все вопросы.
                                 Спасибо за прекрасный сайт!
                             </p>
-                            <img src={stars} className={'stars'} alt={"stars"}/>
+                            <div>
+                                <img src={stars} className={'stars'} alt={"stars"}/>
+                            </div>
                             <div className={'user'}>
                                 <img src={gay} alt={"person"}/>
                                 <div>

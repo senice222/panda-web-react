@@ -59,7 +59,7 @@ const TechSupport = () => {
                     transition={{ delay: 0.5 }}
                 >Оставить заявку</motion.button>
             </article>
-            <figure>
+            <figure className={s.img}>
                 <img src={heart} alt="love" />
             </figure>
         </div>

@@ -10,8 +10,8 @@ const ExclusiveSites = () => {
         <div className={s.secondBlock}>
             <figure className={s.imgDiv}>
                 <img 
-                    src={tuchka} 
-                    alt="tuchka" 
+                    src={tuchka}
+                    alt="tuchka"
                 />
             </figure>
             <article className={s.textDiv}>
@@ -62,7 +62,8 @@ const ExclusiveSites = () => {
             </article>
             <figure>
                 <motion.img 
-                    src={cosmonavt} 
+                    src={cosmonavt}
+                    className={s.cosmonavt}
                     alt="cosmonavt" 
                     viewport={{ once: true }}
                     whileInView={{ x: 0, opacity: 1 }}

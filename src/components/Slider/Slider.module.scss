@@ -33,3 +33,11 @@
   background-position: center;
   background-image: url("../../assets/tuchka_slider.png");
 }
+@media (max-width: 600px) {
+  .headerContent {
+    width: 92% !important;
+    h1 {
+      font-size: 18px !important;
+    }
+  }
+}

@@ -2,6 +2,7 @@ import style from './LeadGeneration.module.scss';
 import pinFileSrc from '../../assets/leads_pin.png';
 import {SVG_MAIL, SVG_PANDA_FACE, SVG_PHONE, SVG_TICK} from "../Results/Svgs";
 import {useForm} from "react-hook-form";
+import { Checkbox } from 'antd';
 
 const LeadGeneration = () => {
     const {register, handleSubmit, watch, formState: {errors}} = useForm();
@@ -9,10 +10,13 @@ const LeadGeneration = () => {
     const onSubmit = (data) => {
         console.log(data);
     };
-
     const name = watch('name', '');
     const phone = watch('phone', '');
     const email = watch('email', '');
+
+    const onChange = (e) => {
+        console.log(`checked = ${e.target.checked}`);
+    };
 
     return (
         <div className={style.leads}>
@@ -89,7 +93,7 @@ const LeadGeneration = () => {
                 </div>
                 <div className={style.confirmLead}>
                     <div className={style.checkbox}>
-                        {/* Add checkbox here if needed */}
+                        <Checkbox onChange={onChange}>Согласие на обработку персональных данных</Checkbox>
                     </div>
                     <div className={style.fileInputContainer}>
                         <input

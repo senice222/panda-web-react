@@ -1,6 +1,6 @@
 @import "../../theme";
 .swiper {
-  width: 1370px;
+  width: 1330px;
   height: 100%;
   //overflow-x: visible;
   @media (max-width: 1400px) {
@@ -40,7 +40,7 @@
       font-size: 18px;
       color: $secondary-p-color;
       line-height: 18px;
-      height: 140px;
+      //height: 140px;
     }
     .stars {
       margin-top: 25px;
@@ -69,4 +69,19 @@
 
 }
 
-
+//
+//@media (max-width: 500px) {
+//  .swiper-wrapper {
+//    width: 92% !important;
+//  }
+//  .swiper-slide {
+//    width: 94% !important;
+//    margin-left: 25px !important;
+//    //flex-direction: column;
+//    //align-items: center;
+//    //justify-content: center;
+//  }
+//  .stars {
+//    margin-top: 5px !important;
+//  }
+//}

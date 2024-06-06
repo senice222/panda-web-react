@@ -9,21 +9,27 @@ import {Slider} from "../../components/Slider/Slider";
 import WelcomeBlock from '../../components/WelcomeBlock/Welcome'
 import Leads from '../../components/LeadGeneration/LeadGeneration'
 import Footer from '../../components/footer/footer'
+import styles from './Home.module.scss'
 import StagesOfWork from "../../components/StagesOfWork/StagesOfWork";
+import ShockedNumbers from '../../components/ShockedNumbers/ShockedNumbers';
+import {Element} from "react-scroll";
 
 const Home = () => {
     return (
         <div>
             <Header />
-            <WelcomeBlock />
-            <CorporateSite/>
-            <ExclusiveSites />
-            <HighPerfomanceSite />
-            <TechSupport />
-            <Results />
-            <Slider />
-            <StagesOfWork />
-            <Leads />
+            <div className={styles.cont}>
+                <Element name={'home'}><WelcomeBlock /></Element>
+                <Element name={'corpo'}><CorporateSite/></Element>
+                <ShockedNumbers />
+                <ExclusiveSites />
+                <HighPerfomanceSite />
+                <TechSupport />
+                <Results />
+                <Element name={'reviews'}><Slider /></Element>
+                <Element name={'blog'}><StagesOfWork /></Element>
+                <Element name={'contact'}><Leads /></Element>
+            </div>
             <Footer />
         </div>
     );

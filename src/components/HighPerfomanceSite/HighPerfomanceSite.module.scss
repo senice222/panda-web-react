@@ -8,7 +8,31 @@
   min-height: 870px;
   margin-left: 230px;
   //margin-right: 250px;
+  
+  @media (max-width: 1024px) {
+     flex-direction: column-reverse;
+    align-items: center;
+    .hacker {
+        margin-top: 35px;
+    }
+    .textDiv {
+      margin-left: 0 !important;
+      width: 90vw !important;
+      h3 {
+        font-size: 25px !important;
+      }
+    }
+    .infoBlock {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
   .imgDiv {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: center;
     position: absolute;
   }
 
@@ -23,7 +47,6 @@
     z-index: 10;
     margin-left: 250px;
     width: 535px;
-
     .successMarkDiv {
       margin-top: 38px;
       display: flex;
@@ -79,14 +102,85 @@
   }
 }
 
+.hacker {
+  z-index: 10 !important;
+  position: relative;
+  @media (max-width: 545px) {
+    width: 70vw;
+    height: auto;
+  }
+}
+
 @media (max-width: 1570px) {
   .imgDiv {
-    //img {
-    //  width: 400px;
-    //  height: auto;
-    //}
-    //background-color: rgba(0, 0, 0, 0.5 );
     position: absolute;
     right: 0;
+  }
+  .textDiv {
+    width: 70% !important;
+    margin-left: 150px !important;
+  }
+  .secondBlock {
+    margin-left: 130px !important;
+  }
+  .infoBlock {
+    margin-right: 50px !important;
+  }
+  .successMarkDiv {
+    p {
+      font-size: 16px !important;
+      width: 100% !important;
+    }
+  }
+}
+@media (max-width: 1360px) {
+  .secondBlock {
+    margin-left: 200px !important;
+  }
+  .textDiv {
+    width: 70%;
+  }
+}
+
+@media (max-width: 1300px) {
+  .secondBlock {
+    margin-left: 150px !important;
+  }
+}
+
+@media (max-width: 1210px) {
+  .secondBlock {
+    margin-left: 100px !important;
+  }
+}
+
+@media (max-width: 1110px) {
+  .secondBlock {
+    margin-left: 50px !important;
+  }
+}
+@media (max-width: 550px) {
+  .secondBlock {
+    margin-left: 0 !important;
+  }
+
+
+  .infoBlock {
+    margin-right: 0 !important;
+  }
+  .textDiv {
+    h3 {
+      text-align: center;
+    }
+    p {
+      text-align: center;
+    }
+    .successMarkDiv {
+      flex-direction: column;
+      align-items: center;
+      img {
+        margin-bottom: 15px;
+      }
+    }
   }
 }

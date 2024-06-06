@@ -10,12 +10,13 @@ const HighPerfomanceSite = () => {
         <div className={s.secondBlock}>
             <figure>
                 <motion.img 
-                    src={hacker} 
-                    alt="hacker" 
+                    src={hacker}
+                    alt="hacker"
                     viewport={{ once: true }}
                     whileInView={{ x: 0, opacity: 1 }}
                     initial={{ x: -10, opacity: 0 }}
                     transition={{ delay: 0.2 }}
+                    className={s.hacker}
                 />
             </figure>
             <div className={s.infoBlock}>

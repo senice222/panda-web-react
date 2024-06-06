@@ -160,6 +160,7 @@
   }
 
   .checkbox {
+    width: 220px;
     // please add it later
   }
 
@@ -190,6 +191,7 @@
     border-style: none;
     width: 300px;
     height: 46px;
+    margin-left: 10px;
     cursor: pointer;
     background-color: $button;
     color: #fff;
@@ -204,5 +206,55 @@
 
   .button:active {
     background-color: $button-click;
+  }
+}
+
+@media (max-width: 966px) {
+  .inputDiv {
+    input {
+      width: 200px !important;
+    }
+  }
+}
+@media (max-width: 800px) {
+  .inputDiv {
+    input {
+      width: 200px !important;
+    }
+  }
+  .content {
+    margin-inline: 5% !important;
+    padding: 23px !important;
+  }
+  .confirmLead {
+    display: flex !important;
+    flex-direction: column !important;
+    margin-top: 33px !important;
+  }
+  .submit {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    width: 100%;
+    .button {
+      width: 100% !important;
+    }
+  }
+
+  .checkbox {
+    width: 100% !important;
+    margin-bottom: 10px;
+  }
+
+  .Contacts {
+    display: flex !important;
+    flex-direction: column !important;
+    .inputDiv {
+      margin-top: 35px;
+      margin-right: 0px !important;
+      input {
+        width: 100% !important;
+      }
+    }
   }
 }

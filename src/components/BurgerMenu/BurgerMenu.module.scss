@@ -1,0 +1,102 @@
+.BurgerMenu {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background-color: #FBFBFD;
+  opacity: 0;
+  z-index: 10;
+  pointer-events: none;
+  transition: .3s;
+}
+.burgerTop {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  img {
+    margin-right: 25px;
+  }
+}
+.links {
+  margin-left: 200px;
+  color: #1C274C;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  p {
+    font-size: 24px;
+    cursor: pointer;
+    font-weight: 600;
+    letter-spacing: 2px;
+  }
+  .razrabi {
+    display: flex;
+    margin-top: 38px;
+    cursor: pointer;
+    align-items: center;
+    transition: .2s;
+    svg {
+      margin-top: 3px;
+      margin-left: 6px;
+      transition: .2s;
+      opacity: 0;
+    }
+    &:hover {
+        h1 {
+          font-size: 48px;
+          transition: .2s;
+          font-weight: 800;
+          @media (max-width: 450px) {
+            font-size: 40px;
+          }
+        }
+      svg {
+        display: block;
+        opacity: 1;
+      }
+    }
+
+  }
+  h1 {
+    font-size: 36px;
+    font-weight: 600;
+    transition: .2s;
+    cursor: pointer;
+    letter-spacing: 2px;
+    @media (max-width: 450px) {
+      font-size: 30px;
+    }
+  }
+  .links1 {
+    margin-top: 35px;
+  }
+  h2 {
+    cursor: pointer;
+    margin-top: 30px;
+    font-size: 36px;
+    letter-spacing: 2px;
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+  @media (max-width: 450px) {
+    margin-left: 30px;
+  }
+}
+.socials {
+  display: flex;
+  height: 17%;
+  margin-left: 35px;
+  align-items: flex-end;
+  p {
+    font-size: 24px;
+  }
+  .logos {
+    margin-left: 15px;
+    display: flex;
+  }
+}
+.active {
+  opacity: 1;
+  pointer-events: all;
+}

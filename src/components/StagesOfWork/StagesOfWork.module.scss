@@ -12,8 +12,8 @@
   //background-size: cover;
 
   .info {
-    width: 100%;
-    padding: 0 200px;
+    width: 100vw;
+    //padding: 0 200px;
 
     .toCenter {
       display: flex;
@@ -38,14 +38,17 @@
     .listStages {
       margin-top: 70px;
       display: flex;
+      width: 100vw;
+      justify-content: center;
       .item {
+        width: 220px;
         div {
           margin-top: -30px;
           position: absolute;
         }
         margin-left: 20px;
         border: 2px solid $stage-border;
-        width: 350px;
+        //width: 350px;
         //height: 118px;
         border-radius: 12px;
         padding: 20px 30px;
@@ -54,5 +57,53 @@
         }
       }
     }
+  }
+}
+@media (max-width: 1470px) {
+  .titlesDiv {
+    h2 {
+      text-align: center;
+      font-size: 36px !important;
+      width: auto;
+    }
+  }
+  .listStages {
+    flex-wrap: wrap;
+  }
+  .item {
+    margin-bottom: 30px;
+
+  }
+}
+@media (max-width: 910px) {
+  .titlesDiv {
+    width: 90vw;
+    p {
+      text-align: center;
+    }
+  }
+}
+@media (max-width: 704px) {
+  .titlesDiv {
+    h2 {
+      font-size: 25px !important;
+      text-align: center;
+    }
+    p {
+      margin-top: 15px !important;
+    }
+  }
+}
+@media (max-width: 480px) {
+  .stagesWrapper {
+    margin-top: 20px;
+    height: auto !important;
+    min-height: 800px;
+    background-image: none;
+  }
+  .item {
+    width: 80vw !important;
+    margin: 0 !important;
+    margin-top: 30px !important;
   }
 }
