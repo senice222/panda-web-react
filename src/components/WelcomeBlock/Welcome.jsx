@@ -1,7 +1,7 @@
 import style from './welcome.module.scss'
 import { motion } from 'framer-motion'
 
-export default () => {
+export default  () => {
     return (
         <motion.section
          className={style.welcomeSection}
